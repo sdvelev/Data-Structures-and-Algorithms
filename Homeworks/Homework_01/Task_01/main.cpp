@@ -3,16 +3,15 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
-using namespace std;
 
+using namespace std;
 
 int main() {
     string word;
     cin >> word;
 
     unsigned int wordLength = word.length();
-
-
+    
     vector<int> result;
 
     result.assign(wordLength,1000000);
@@ -54,6 +53,5 @@ int main() {
     for (int i = 0; i < wordLength; i++) {
         cout << result[i] << " ";
     }
-
     return 0;
 }
